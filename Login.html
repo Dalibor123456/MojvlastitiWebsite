@@ -1,123 +1,82 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-            
-           body {
-                
-               background: -moz-linear-gradient(top, rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%); 
-               background: -webkit-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); 
-               background: linear-gradient(to bottom, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%);
-                height: 1000px;
-            }
-            
-            h1{
-                
-                text-align: center;
-                font-family: cursive;
-                color: #660066;
-            } 
-            
-            input {
-                
-                height: 60px;
-                width:250px;
-               border-bottom-left-radius:60px;
-               border-bottom-right-radius: 60px;
-               border-top-left-radius: 60px;
-               border-top-right-radius: 60px;
-               background-color: #00ffcc;
-            }
-            
-            label {
-               text-transform: uppercase;
-               font-family:cursive;
-               color: #660066;
-                
-                
-            }
-            
-            p{
-                
-                text-align: center;
-                font-family: cursive;
-                text-transform: uppercase;
-            } 
-            
-            
-            
-            </style>
-            
-            
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script>
+
+
+    </script>
+
+    <style>
+       
+        #form {
+           float:left;
+           position:center;
+           margin-left:500px;
+           margin-top:100px;
+        }
+
+        #form, input {
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+        }
+
+        #slanje {
+            margin-top: 150px;
+            color:white;
+            width: 150px;
+            margin-right: 300px;
+            margin-left: 650px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background: #104161;
+            background-image: -webkit-linear-gradient(top, #104161, #b1d3e8);
+            background-image: -moz-linear-gradient(top, #104161, #b1d3e8);
+            background-image: -ms-linear-gradient(top, #104161, #b1d3e8);
+            background-image: -o-linear-gradient(top, #104161, #b1d3e8);
+            background-image: linear-gradient(to bottom, #104161, #b1d3e8);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+        }
+
+    </style>
+
     
-    <body>
-        
-        <h1>Registracija</h1>      
-                
-        <form action="#" method="get" >
-            
-            <table align="center">
-                <tr>
-                    <td><label>Ime:</label></td>
-                    <td><input type="text" /></td>
-                    
-                </tr>
-                
-                <tr>
-                    <td><label>Prezime:</label></td>
-                    <td><input type="text" /></td>
-                </tr>
-                    <tr>
-                    <td><label>Lozinka:</label></td>
-                    <td><input type="Password" /></td>
-                    
-                    
-                </tr>
-                
-                <tr>
-                    <td><label>E-mail:</label></td>
-                    <td><input type="e-mail" /></td>
-                    
-                </tr>
-                
-                <tr><td><label>Ovime potvrđujem da sam upoznat <br/> s pravilima korištenja ove web stranice <br/> i da podatke
-                        ostavljam na vlastitu odgovornost.</label></td>
-                    <td><input type="checkbox" value="check"></td>
-                    
-                </tr>
-                
-                <div id="button"><tr>
-                    <td><input type="button" value="Pošalji"/></td>
-                    <td><input type="reset" value="Izbriši"/></td>
-                    
-                </tr></div>
-                
-                
-                
-            </table>
-            
-            
-            
-            
-            
-            
-        </form>   
-        
-        
-        <p>&copy; Dalibor Marković</p> 
-            
-        
-    </body>
+
+</head>
+<body>
+
+ <form name="forma" method="get" action="MessageBox.html" >
+     
+     <div id="form">
+         Username:
+         <input type="text" value="Username" name="korisnik" />
+         
+         
+         
+     Password:
+         <input type="password" name="Password" value="Password"/>
+    </div>
+
+     
+      <input type="submit" id="slanje"  value="submit"/>
+         
     
-    
+
+ </form>    
+
+
+
+</body>
 </html>
